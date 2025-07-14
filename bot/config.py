@@ -29,7 +29,7 @@ class Config:
     MEETING_PLATFORM = os.getenv("MEETING_PLATFORM", "google_meet")
     
     # Keywords to trigger meeting suggestion
-    TRIGGER_KEYWORDS = ["встреча", "созвон", "наберу"]
+    TRIGGER_KEYWORDS = ["встреча", "созвон", "наберу","cозвон"]
     
     @classmethod
     def validate(cls) -> bool:
