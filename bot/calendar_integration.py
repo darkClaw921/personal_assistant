@@ -46,7 +46,7 @@ class GoogleCalendarIntegration:
             else:
                 flow = InstalledAppFlow.from_client_secrets_file(
                     Config.GOOGLE_CREDENTIALS_PATH, SCOPES)
-                creds = flow.run_local_server(port=8080,)
+                creds = flow.run_local_server(port=5051,)
             
             # Сохраняем credentials для следующих запусков
             with open(Config.GOOGLE_TOKEN_PATH, 'wb') as token:
